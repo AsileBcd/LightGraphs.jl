@@ -3,6 +3,7 @@
 
 Compute the transitive closure of a directed graph, using DFS.
 If `selflooped` is true, add self loops to the graph.
+If `selflooped` is false and there are already self loops in the graph, removes self loops.
 
 ### Performance
 Time complexity is ``\\mathcal{O}(|E||V|)``.

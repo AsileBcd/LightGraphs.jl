@@ -1,7 +1,6 @@
 @testset "Transitivity" begin
     completedg = CompleteDiGraph(4)
-    circledg = PathDiGraph(4)
-    add_edge!(circledg, 4, 1)
+    circledg = CycleDiGraph(4)
     @testset "$circle" for circle in testgraphs(circledg)
         T = eltype(circle)
         complete = DiGraph{T}(completedg)
